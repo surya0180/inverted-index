@@ -97,8 +97,8 @@ lists of each word.
 Note:-
 
 1.) Please make sure you download the library (termtables [ pip install termtables(windows) ]) before you run the code.
-2.) To print the vocabulary which is stored in the main memory, simply uncomment the code from line (73, 81).
+2.) To print the vocabulary which is stored in the main memory, simply uncomment the code from line (74, 81).
 3.) Please change the path of the dataset in the code before you run it. Same with all the output files and stop words.
-4.) I have listed all the stop words in a seperate text file ( stop_words.txt ) because the list of stop words is too huge to include 
-    it in the code. 
+4.) I have listed all the stop words in a seperate text file ( Assign012019174-stopwords.txt ) because the list of stop 
+    words is too huge to include it in the code. 
 

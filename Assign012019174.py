@@ -45,8 +45,8 @@ def prepareInvertedIndex(dictionary):
 
 if __name__ == '__main__':
     # Opening the text files required for the tokenizing ( Stop words and the output of the final tokenized words )
-    sw = open('./stop_words.txt', 'r+', encoding='utf8')
-    output = open('./output.txt', 'w', encoding='utf8')
+    sw = open('./Assign012019174-stopwords.txt', 'r+', encoding='utf8')
+    output = open('./Assign012019174-output.txt', 'w', encoding='utf8')
 
     # Delimiters used in the tokenized process which includes all the necessary special charachters
     delimiters = ['.', ',', '“', '”', '-', "’s","'s", "\n", "\t", '—', '/', 
@@ -84,7 +84,8 @@ if __name__ == '__main__':
 
     # # Generating the table ui to print it the the output.txt. 
     # # Please make sure that you install the necessary library before running this code.
-    # # If you dont want this fancy way of printing the table, you can comment the code from line 89 to 97, and uncomment line 100 and 101.
+    # # If you dont want this fancy way of printing the table, you can comment the code from line 90 to 98,  
+    # # and uncomment line 102 and 103.
 
     tabulate_data = []
     for i in inverted_index:
