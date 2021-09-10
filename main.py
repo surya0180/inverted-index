@@ -82,8 +82,10 @@ if __name__ == '__main__':
 
     inverted_index = prepareInvertedIndex(dictionary) # Creating the inverted index by passing the vocabulary to the function
 
-    # Generating the table ui to print it the the output.txt. 
-    # Please make sure that you install the necessary library before running this code.
+    # # Generating the table ui to print it the the output.txt. 
+    # # Please make sure that you install the necessary library before running this code.
+    # # If you dont want this fancy way of printing the table, you can comment the code from line 89 to 97, and uncomment line 100 and 101.
+
     tabulate_data = []
     for i in inverted_index:
         tabulate_data.append([i , str(inverted_index[i]['frequency']) , " ".join(str(i) for i in inverted_index[i]['posting_list'])])
@@ -92,7 +94,11 @@ if __name__ == '__main__':
         header=["Term", "Frequency", "Posting List"],
         style=tt.styles.ascii_thin_double,
     )
-
-    # Storing the Posting lists( Inverted Index ) in the secondary memory ( Hard drive, SSD )
     output.write(string)
+
+    # # Storing the Posting lists( Inverted Index ) in the secondary memory ( Hard drive, SSD )
+
+    # for i in inverted_index:
+    #     output.write("Word: " + i + "\tFrequency: " + str(inverted_index[i]['frequency']) + "\tPosting List: " + " ".join(str(i) for i in inverted_index[i]['posting_list']) + "\n")
+
     output.close()

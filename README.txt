@@ -89,13 +89,16 @@ lists of each word.
 
 7.) Here the frequencies are the total number of times a word has occured in all the document. For example:
     if advocate occured: 
-        3 time in doc 1
-        5 time in doc 2
-        8 time in doc 3
+        3 times in doc 1
+        5 times in doc 2
+        8 times in doc 3
     the frequency of the word "advocate" is 16 for the 3 documents.
 
 Note:-
 
 1.) Please make sure you download the library (termtables [ pip install termtables(windows) ]) before you run the code.
 2.) To print the vocabulary which is stored in the main memory, simply uncomment the code from line (73, 81).
-3.) Please change the path of the dataset in the code before you run it. Same with all the output files and stop words
+3.) Please change the path of the dataset in the code before you run it. Same with all the output files and stop words.
+4.) I have listed all the stop words in a seperate text file ( stop_words.txt ) because the list of stop words is too huge to include 
+    it in the code. 
+
